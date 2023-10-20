@@ -1,0 +1,36 @@
+
+.feature_container{
+    display: flex;
+}
+.performance{
+    display: flex;
+    margin: 4px;
+    font-size: 13px;
+    padding: 10px ;
+}
+.number{
+
+    font-size: 20px;
+}
+.voilet{
+
+    color: violet;
+}
+.green{
+    color: green;
+}
+.blue{
+    color: rgb(12, 237, 241);
+}
+.headingMain{
+    margin: 0px 5px;
+}
+.bottom_data{
+    display: flex;
+}
+.red{
+    color: red;
+}
+.orange{
+    color: orangered;
+}
