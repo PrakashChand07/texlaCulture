@@ -15,7 +15,6 @@ import ListItemText from '@mui/material/ListItemText';
 import MailIcon from '@mui/icons-material/Mail';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import KeyFeature from '../keyFeature/KeyFeature';
 import Header from '../headerBar/Header';
 import './Navbar.css';
@@ -30,9 +29,9 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div>
+    <Box>
       <Toolbar />
-      <div className='company_name'><span className='texla' >TEXLA</span><span>CULTURE</span></div>
+      <Box className='company_name'><span className='texla' >TEXLA</span><span>CULTURE</span></Box>
       <Divider />
       <List>
         {['Dashboard', 'Companies'].map((text, index) => (
@@ -59,7 +58,7 @@ function ResponsiveDrawer(props) {
         ))}
       </List>
       <Divider />
-    </div>
+    </Box>
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;

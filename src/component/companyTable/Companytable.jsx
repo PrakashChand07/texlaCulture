@@ -17,26 +17,25 @@ import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
 const columns = [
-  { id: "name", label: "Company Name", minWidth: 170 },
-  { id: "onboardingDate", label: "Onboarding Date", minWidth: 100 },
+  { id: "name", label: "Company Name", minWidth: 80 },
   {
     id: "goLiveDate",
     label: "Go-Live Date",
-    minWidth: 170,
+    minWidth: 80,
     align: "right",
     format: (value) => value.toLocaleString("en-US"),
   },
   {
     id: "totalUserBase",
     label: "Total User Base",
-    minWidth: 170,
+    minWidth: 80,
     align: "right",
     format: (value) => value.toLocaleString("en-US"),
   },
   {
     id: "lastBilling",
     label: "Last Billing",
-    minWidth: 170,
+    minWidth: 80,
     align: "right",
     format: (value) => value.toFixed(2),
   },
@@ -45,7 +44,6 @@ const columns = [
 
 function createData(
   name,
-  onboardingDate,
   goLiveDate,
   totalUserBase,
   lastBilling,
@@ -53,7 +51,6 @@ function createData(
 ) {
   return {
     name,
-    onboardingDate,
     goLiveDate,
     totalUserBase,
     lastBilling,
@@ -64,7 +61,7 @@ function createData(
 const rows = [
   createData(
     "Texlaculture",
-    "12 Jan 2022",
+  
     "07 Aug 2022",
     244,
     "07 Aug 2022",
@@ -72,7 +69,7 @@ const rows = [
   ),
   createData(
     "Pinch Life",
-    "11 Feb 2022",
+
     "06 May 2022",
     1000,
     "07 Aug 2022",
@@ -80,7 +77,7 @@ const rows = [
   ),
   createData(
     "O Buddy",
-    "10 Sep 2022",
+
     "05 Oct 2022",
     150,
     "07 Aug 2022",
@@ -88,7 +85,7 @@ const rows = [
   ),
   createData(
     "Texlaculture 2",
-    "12 Jan 2022",
+
     "12 Jan 2022",
     244,
     "07 Aug 2022",
@@ -96,7 +93,6 @@ const rows = [
   ),
   createData(
     "Pinch Life 2",
-    "11 Feb 2022",
     "06 May 2022",
     1000,
     "07 Aug 2022",
@@ -104,7 +100,7 @@ const rows = [
   ),
   createData(
     "O Buddy 2",
-    "10 Sep 2022",
+
     "05 Oct 2022",
     150,
     "07 Aug 2022",
@@ -113,14 +109,12 @@ const rows = [
   createData(
     "Texlaculture 3",
     "12 Jan 2022",
-    "12 Jan 2022",
     244,
     "07 Aug 2022",
     "Active"
   ),
   createData(
     "Pinch Life 3",
-    "11 Feb 2022",
     "06 May 2022",
     1000,
     "07 Aug 2022",
@@ -128,7 +122,6 @@ const rows = [
   ),
   createData(
     "O Buddy 3",
-    "10 Sep 2022",
     "05 Oct 2022",
     150,
     "07 Aug 2022",
@@ -136,7 +129,6 @@ const rows = [
   ),
   createData(
     "Pinch Life 4",
-    "11 Feb 2022",
     "06 May 2022",
     1000,
     "07 Aug 2022",
@@ -144,7 +136,6 @@ const rows = [
   ),
   createData(
     "O Buddy 4",
-    "10 Sep 2022",
     "05 Oct 2022",
     150,
     "07 Aug 2022",
